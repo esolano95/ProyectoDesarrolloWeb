@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CapiFruitCR</title>
+    <link rel="shortcut icon" href="../img/36103486-8ee9-4b69-b7d6-100fc0df0161.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;600&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="../estilos/CSS/styles.css">
+</head>
+<body>
+    <header class="header">
+        <a href="../index.html"><img src="../img/36103486-8ee9-4b69-b7d6-100fc0df0161-removebg-preview.png" alt="Logo de la empresa" class="header__logo"></a>
+        <nav>
+            <ul>
+                <li class="header__item"><a class="header__anchor" href="../index.html">Inicio</a></li>
+                <li class="header__item"><a class="header__anchor" href="./productos.html">Productos</a></li>
+                <li class="header__item"><a class="header__anchor" href="./entregas.html">Entregas</a></li>
+                <li class="header__item"><a class="header__anchor" href="./nosotros.html">Nosotros</a></li>
+                <li class="header__item"><a class="header__anchor header__anchor--activo" href="./contactos.html">Contactos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contactos">
+            <h1 class="capiproduct__titulo" data-aos="zoom-in-down" data-aos-delay="300"
+            >Sé nuestro <em>"CapiCliente"</em> 😁</h1>
+            <h3 class="capiproduct__slogan" data-aos="zoom-in-down" data-aos-delay="300"
+            >Nos gustaría conocerte 🤩 <br>¡Ingrese su información a continuación y <br> pronto nos pondremos en contacto con usted!</h2><br>
+
+            <form action="#" method="GET" enctype="text/plain" class="form">
+                <fieldset>
+                    <legend><strong>Información del cliente</strong></legend>
+                    <div>
+                        <label for="name">Nombre y Apellidos:</label>
+                        <input type="text" name="name" id="name" required>
+                    </div>
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+                    <div>
+                        <label for="age">Edad:</label>
+                        <input type="number" name="age" id="age" min="1" max="200">
+                    </div>
+                    <div>
+                        <label for="date">Fecha de Nacimiento:</label>
+                        <input type="date" name="date" id="date" min="2019-06-10">
+                    </div>
+                    <div>
+                        <label for="phone">Teléfono:</label>
+                        <input type="tel" name="phone" id="phone">
+                    </div>
+                    <div>
+                        <span>Sexo: 
+                            <input type="radio" name="gender" id="male" value="male">
+                            <label for="male">Hombre</label>
+                            <input type="radio" name="gender" id="female" value="female">
+                            <label for="female">Mujer</label>
+                        </span>
+                    </div>
+                <br>
+                <fieldset>
+                    <legend><strong>Información Adicional</strong></legend>
+                    <div>
+                        <label for="fruta">Fruta Favorita</label>
+                        <input type="text" name="fruta" id="fruta" required>
+                    </div>
+                    <div>
+                        <label for="verdura">Verdura Favorita</label>
+                        <input type="text" name="verdura" id="verdura">
+                    </div>
+                    <div>
+                        <br>
+                        <label for="file">Subir Archivo</label>
+                        <input id="file" type="file" name="file">
+                    </div>
+                    <div>
+                        <label for="bio">Cuéntanos que le gustaría</label><br>
+                        <textarea id="bio" name="bio"></textarea>
+                    </div><br>
+                    <div class="botones">
+                        <input type="reset" value="Reiniciar"></input><br>
+                        <input type="submit" value="Enviar"></input>
+                    </div>
+                </fieldset>
+            </form><br>
+        </section>
+    </main>
+    
+    <footer class="footer">
+        <nav class="footer__nav">
+            <ul class="footer__list">
+                <p class="footer__titulo">Contáctenos: &nbsp;</p>
+                <a class="footer__item" target="_blank" href="https://www.facebook.com/CapifruitCR"><img class="footer__img" src="../img/facebook.jfif" alt="Facebook"></a>
+                <a class="footer__item" target="_blank" href="https://www.instagram.com/capifruitcr/"><img class="footer__img" src="../img/instagram.jfif" alt="Instagram"></a>
+                <a class="footer__item" target="_blank" href="https://wa.me/50672114275?text=¡Hola! Me interesan tus productos."><img class="footer__img" src="../img/whatsApp_Img.jfif" alt="WhatsApp"></a>
+            </ul>
+        </nav>
+    </footer>
+    <!--AOS-->
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

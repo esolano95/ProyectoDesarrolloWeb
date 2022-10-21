@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CapiFruitCR</title>
+    <link rel="shortcut icon" href="./img/36103486-8ee9-4b69-b7d6-100fc0df0161.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;600&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="./estilos/CSS/styles.css">
+</head>
+<body>
+    <header class="header">
+        <a href="#"><img src="./img/36103486-8ee9-4b69-b7d6-100fc0df0161-removebg-preview.png" alt="Logo de la empresa" class="header__logo"></a>
+        <nav class="header__nav">
+            <ul class="header__list">
+                <li class="header__item"><a class="header__anchor header__anchor--activo" href="#">Inicio</a></li>
+                <li class="header__item"><a class="header__anchor" href="./vistas/productos.html">Productos</a></li>
+                <li class="header__item"><a class="header__anchor" href="./vistas/entregas.html">Entregas</a></li>
+                <li class="header__item"><a class="header__anchor" href="./vistas/nosotros.html">Nosotros</a></li>
+                <li class="header__item"><a class="header__anchor" href="./vistas/contactos.html">Contactos</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="hero">
+            <div class="hero__wrapper" data-aos="fade-right" data-aos-delay="300">
+                <h1 class="hero__heading">Bienvenidos a CapiFruit</h1><br>
+                <p class="hero__slogan"> <em>Somos Capi Fruit CR, nos encargamos de ahorrar tú tiempo<br> en la compra de frutas y verduras.</em></p>
+                <a class="hero__btn" href="./vistas/nosotros.html">Conozca más de nosotros</a>
+            </div>
+        </section>
+
+        <section class="info">
+            <div class="infocard" data-aos="flip-left" data-aos-delay="300">
+                <img class="infocard__img" src="./img/1.jpg" width="240" height="240">
+                <h2 class="infocard__titulo">CapiProductos</h2>
+                <p class="infocard__desc">Nos preocupamos grandemente por la calidad de nuestros productos.</p>
+                <a class="btn" href="./vistas/productos.html">Productos</a>
+            </div>
+
+            <div class="infocard" data-aos="flip-left" data-aos-delay="300">
+                <img class="infocard__img" src="./img/2.jpg" width="240" height="240">
+                <h2 class="infocard__titulo">CapiEntregas</h2>
+                <p class="infocard__desc">Las entregas son realizadas personalmente en la comodidad de su casa.</p>
+                <a class="btn" href="./vistas/entregas.html">Entregas</a>
+            </div>
+
+            <div class="infocard" data-aos="flip-left" data-aos-delay="300">
+                <img class="infocard__img" src="./img/4.jpg" width="240" height="240"></li>
+                <h2 class="infocard__titulo">CapiClientes</h2>
+                <p class="infocard__desc">Estamos ansiosos de ser parte de tu familia. No dudes en escribirnos.</p>
+                <a class="btn" href="./vistas/contactos.html">Contactos</a>
+            </div>
+        </section><br><br>
+    </main>
+    <section class="video__index">
+        <h3 class="video__titulo" data-aos="fade-left" data-aos-delay="300">Estamos para hacerle la vida más fácil</h3>
+        <video id="background-video" src="./img/video.mp4" autoplay loop></video>
+    </section>
+    <footer class="footer">
+        <nav class="footer__nav"> 
+            <ul class="footer__list">
+                <p class="footer__titulo">Contáctenos: &nbsp;</p>
+                <a class="footer__item" target="_blank" href="https://www.facebook.com/CapifruitCR"><img class="footer__img" src="./img/facebook.jfif" alt="Facebook"></a>
+                <a class="footer__item" target="_blank" href="https://www.instagram.com/capifruitcr/"><img class="footer__img" src="./img/instagram.jfif" alt="Instagram"></a>
+                <a class="footer__item" target="_blank" href="https://wa.me/50672114275?text=¡Hola! Me interesan tus productos."><img class="footer__img" src="./img/whatsApp_Img.jfif" alt="WhatsApp"></a>
+            </ul>
+        </nav>
+    </footer>
+    <!--AOS-->
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
