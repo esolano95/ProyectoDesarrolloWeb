@@ -154,8 +154,6 @@ p{
 /*PARRAFOS FIN*/
 
 /*PIE DE PAGINA*/
-a[target="_blank"]{
-}
 .footer2{
     margin-top: 13.4rem;
 }
@@ -170,9 +168,9 @@ a[target="_blank"]{
     align-items: center;
 }
 .footer__img{
-    height: 50px;
-    width: 50px;
-    padding: 1.5px;
+    height: 40px;
+    width: 40px;
+    margin: 0.3rem;
 }
 /*PIE DE PAGINA FIN*/
 
@@ -388,6 +386,14 @@ grid-column: span 2;
     gap: 20px;
     font-weight: bold;
 }
+.carousel--alto{
+    height: 50vh;
+}
+.carousel--img{
+    object-fit: contain;
+    object-position: center;
+    height: 50vh;
+}
 
 /*************************CONTACTOS*************************/
 /*FORMULARIO*/
@@ -431,6 +437,7 @@ input[type="submit"]:hover{
     border: 1px solid rgb(21, 128, 92);
 }
 /*FORMULARIO FIN*/
+
 
 /*************************MEDIA QUERIES HASTA 768px*************************/
 @media screen and (max-width: 1024px){
