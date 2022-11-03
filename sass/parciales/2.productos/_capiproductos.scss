@@ -2,17 +2,17 @@
 .capiproduct__head{
     display: flex;
     flex-direction: column;    
-
-&__titulo{
+}
+.capiproduct__titulo{
     color: rgb(21, 128, 92);
     font-size: 30px;
     text-align: center;
 }
-&__video{
+.capiproduct__video{
     width: 30%;
     align-self: center;
 }
-&__parrafo{
+.capiproduct__parrafo{
     background-color: rgb(141, 248, 212);
     font-weight: bold;
     text-align: center;
@@ -21,7 +21,7 @@
     margin-bottom: 1rem;
     padding: 19px;
 }
-&__slogan{
+.capiproduct__slogan{
     color: rgb(21, 128, 92);
     font-size: 25px;
     text-align: center;
@@ -30,5 +30,4 @@
     align-items: center;
     align-content: center;
     margin-top: 2rem;
-}
 }

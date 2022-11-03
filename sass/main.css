@@ -160,15 +160,18 @@ p {
   height: 40vh;
   overflow: hidden;
 }
-.video__index__titulo {
+
+.video__titulo {
   position: absolute;
   font-size: 3rem;
   color: white;
 }
-.video__index .slide-left {
+
+.slide-left {
   -webkit-animation: slide-left 0.5s ease-in infinite;
   animation: slide-left 0.5s ease-in infinite;
 }
+
 @-webkit-keyframes slide-left {
   0% {
     transform: translateX(0);
@@ -185,7 +188,7 @@ p {
     transform: translateX(-100px);
   }
 }
-.video__index #background-video {
+#background-video {
   width: 100%;
 }
 
@@ -225,16 +228,19 @@ p {
   display: flex;
   flex-direction: column;
 }
-.capiproduct__head__titulo {
+
+.capiproduct__titulo {
   color: rgb(21, 128, 92);
   font-size: 30px;
   text-align: center;
 }
-.capiproduct__head__video {
+
+.capiproduct__video {
   width: 30%;
   align-self: center;
 }
-.capiproduct__head__parrafo {
+
+.capiproduct__parrafo {
   background-color: rgb(141, 248, 212);
   font-weight: bold;
   text-align: center;
@@ -243,7 +249,8 @@ p {
   margin-bottom: 1rem;
   padding: 19px;
 }
-.capiproduct__head__slogan {
+
+.capiproduct__slogan {
   color: rgb(21, 128, 92);
   font-size: 25px;
   text-align: center;
@@ -305,7 +312,8 @@ p {
 .carousel--alto {
   height: 50vh;
 }
-.carousel--alto--img {
+
+.carousel--img {
   -o-object-fit: contain;
      object-fit: contain;
   -o-object-position: center;
@@ -382,33 +390,39 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 25px;
+  padding: 38px;
 }
-.contactos .botones {
+
+.botones {
   display: flex;
 }
-.contactos input[type=text] {
+
+input[type=text] {
   width: 150px;
   font-size: 15px;
 }
-.contactos input[type=reset] {
+
+input[type=reset] {
   cursor: pointer;
   width: 120px;
   color: rgb(21, 128, 92);
   font-size: 16px;
   font-weight: bold;
 }
-.contactos input[type=reset]:hover {
+
+input[type=reset]:hover {
   border: 1px solid rgb(21, 128, 92);
 }
-.contactos input[type=submit] {
+
+input[type=submit] {
   width: 120px;
   margin-left: 35px;
   color: rgb(21, 128, 92);
   font-size: 16px;
   font-weight: bold;
 }
-.contactos input[type=submit]:hover {
+
+input[type=submit]:hover {
   border: 1px solid rgb(21, 128, 92);
 }
 
