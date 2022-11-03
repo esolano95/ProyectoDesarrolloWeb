@@ -1,0 +1,34 @@
+/*PRODUCTOS*/
+.capiproduct__head{
+    display: flex;
+    flex-direction: column;    
+
+&__titulo{
+    color: rgb(21, 128, 92);
+    font-size: 30px;
+    text-align: center;
+}
+&__video{
+    width: 30%;
+    align-self: center;
+}
+&__parrafo{
+    background-color: rgb(141, 248, 212);
+    font-weight: bold;
+    text-align: center;
+    font-size: 21px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 19px;
+}
+&__slogan{
+    color: rgb(21, 128, 92);
+    font-size: 25px;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    margin-top: 2rem;
+}
+}

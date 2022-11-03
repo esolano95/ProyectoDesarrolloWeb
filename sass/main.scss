@@ -1,0 +1,28 @@
+/*INDEX*/
+@import "./parciales/reset";
+@import "./parciales/variables";
+@import "./parciales/1.index/header";
+@import "./parciales/1.index/hero";
+@import "./parciales/1.index/info";
+@import "./parciales/1.index/video__index";
+@import "./parciales/1.index/footer";
+
+/*PRODUCTOS*/
+@import "./parciales/2.productos/capiproductos";
+@import "./parciales/2.productos/productos";
+
+/*ENTREGAS*/
+@import "./parciales/3.entregas/carousel";
+@import "./parciales/3.entregas/recomendacion";
+
+/*NOSOTROS*/
+@import "./parciales/4.nosotros/block";
+@import "./parciales/4.nosotros/member";
+
+/*CONTACTOS*/
+@import "./parciales/5.contactos/contactos";
+
+/*MEDIA QUERIES*/
+@import "./parciales/6.media_queries/hasta1024px";
+@import "./parciales/6.media_queries/hasta768px";
+@import "./parciales/6.media_queries/hasta320px";

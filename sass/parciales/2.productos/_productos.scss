@@ -1,0 +1,47 @@
+.productos{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    grid-auto-flow: dense;
+    gap: 0.4rem;
+    margin: 1rem;
+
+& > div > img, video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+&__img:hover{
+    opacity: 50%;
+    
+}
+.vertical{
+    grid-row: span 2;
+}
+.horizontal{
+    grid-column: span 2;
+}
+.gigante{
+grid-row: span 2;
+grid-column: span 2;
+}
+.movil1{
+    grid-row: span 2;
+    background-color:rgba(0, 128, 0, 0.534);
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+.movil2{
+    background-color: rgba(51, 126, 101, 0.342);
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+.movil3{
+    background-color: rgba(153, 205, 50, 0.425);
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+}
+/*PRODUCTOS FIN*/

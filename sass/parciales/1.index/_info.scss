@@ -1,0 +1,58 @@
+/*INFO*/
+.infocard{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    padding: 0rem 1rem;
+    overflow: hidden;
+
+&__wrapper{
+    width: 100%;
+    padding: 1rem 2rem;
+    position: relative;
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+&__img{
+    width: 300px;
+    height: 250px;
+    box-sizing: border-box;
+    margin: 1rem;
+    padding: 0.5rem;    
+}
+&__titulo{
+    position: absolute;
+    top: 0rem;
+    right: 14rem;
+    color: rgb(36, 122, 94);
+    padding: 0.2rem 0.5rem;
+    font-size: 1.5rem;
+    border-radius: 5px;
+}
+&__desc{
+    margin-top: 1rem;
+    text-align: center;
+}
+.btn{
+    position: relative;
+    display: inline-block;
+    justify-content: center;
+    align-content: center;
+    color: rgb(15, 105, 15);
+    background-color: rgb(187, 240, 222);
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    border-radius: 15px;
+    margin-top: 15px;
+    transition: 0.5s;
+}
+&:hover{
+    color: whitesmoke;
+    padding: 0.6rem;
+}
+}
+/*INFO FIN*/

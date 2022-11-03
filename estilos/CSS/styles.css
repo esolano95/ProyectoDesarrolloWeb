@@ -7,7 +7,6 @@
     border: 0;
 }
 
-
 /*************************INDEX*************************/
 /*HEARDER*/
 header{
@@ -86,16 +85,16 @@ header{
 }
 /*HERO FIN*/
 
-/*INFORMACION*/
-.info{
+/*INFO*/
+.infocard{
     margin-top: 2rem;
     display: flex;
     flex-direction: row;
     gap: 0.5rem;
     padding: 0rem 1rem;
-    overflow: hidden
+    overflow: hidden;
 }
-.infocard{
+.infocard__wrapper{
     width: 100%;
     padding: 1rem 2rem;
     position: relative;
@@ -121,7 +120,6 @@ header{
     font-size: 1.5rem;
     border-radius: 5px;
 }
-
 .infocard__desc{
     margin-top: 1rem;
     text-align: center;
@@ -143,8 +141,7 @@ header{
     color: whitesmoke;
     padding: 0.6rem;
 }
-
-/*INFORMACION FIN*/
+/*INFO FIN*/
 
 /*PARRAFOS*/
 p{
@@ -152,27 +149,6 @@ p{
 	font-size: 1.6rem;
 }
 /*PARRAFOS FIN*/
-
-/*PIE DE PAGINA*/
-.footer2{
-    margin-top: 13.4rem;
-}
-.footer__nav{
-    background-color: rgba(197, 193, 193, 0.397);
-    padding: 1.5rem;
-}
-.footer__list{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-}
-.footer__img{
-    height: 40px;
-    width: 40px;
-    margin: 0.3rem;
-}
-/*PIE DE PAGINA FIN*/
 
 /*ELEMENTOS DE MEDIA*/
 .video__index{
@@ -231,6 +207,35 @@ p{
 }
 /*ELEMENTOS DE MEDIA FIN*/
 
+/*PIE DE PAGINA*/
+.footer{
+    height: 6rem;
+    background-image: url("../../img/fondo.1.webp");
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: row;
+}
+.footer__titulo{
+    display: inline-block;
+    padding: 0.2rem;
+    font-size: 13px;
+    font-weight: bold;
+}
+.footer__item{
+    display: inline-block;
+    padding: 0.2rem;
+    border-radius: 13px;
+    background-color: rgb(198, 240, 226);
+    font-size: 20px;  
+}
+.footer__img{
+    height: 25px;
+    width: 25px;
+    margin: 0.4rem;
+}
+/*PIE DE PAGINA FIN*/
+
 /*************************PRODUCTOS*************************/
 .capiproduct__head{
     display: flex;
@@ -267,7 +272,7 @@ p{
 
 .productos{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
     grid-auto-flow: dense;
     gap: 0.4rem;
     margin: 1rem;
@@ -276,6 +281,10 @@ p{
     height: 100%;
     width: 100%;
     object-fit: cover;
+}
+.productos__img:hover{
+    opacity: 50%;
+    
 }
 .vertical{
     grid-row: span 2;
@@ -288,7 +297,7 @@ grid-row: span 2;
 grid-column: span 2;
 }
 .movil1{
-    grid-row: span 1;
+    grid-row: span 2;
     background-color:rgba(0, 128, 0, 0.534);
     color: white;
     font-weight: bold;
@@ -305,6 +314,25 @@ grid-column: span 2;
     color: white;
     font-weight: bold;
     text-align: center;
+}
+
+/*************************ENTREGAS*************************/
+.carousel--alto{
+    height: 50vh;
+}
+.carousel--img{
+    object-fit: contain;
+    object-position: center;
+    height: 50vh;
+}
+.recomendacion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    gap: 20px;
+    font-weight: bold;
 }
 
 /*************************NOSOTROS*************************/
@@ -335,6 +363,7 @@ grid-column: span 2;
     margin: 0rem 0.5rem;
     justify-content: center;
     align-items: center;
+    margin-bottom: 13.8rem;
 }
 .member__titulo{
     color: rgb(21, 128, 92);
@@ -349,57 +378,12 @@ grid-column: span 2;
     color: white;
     font-weight: bold;
 }
-.mi__historia{
-    display: flex;
-    justify-content: center;
-}
-.mi__pasado{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.mi__titulo{
-    color: rgb(21, 128, 92);
-}
-.mi__parrafo{
-    background-color: rgb(146, 206, 186);
-    padding: 10px;
-    font-size: 21px;
-    color: white;
-    font-weight: bold;
-    text-align: center;
-}
-.mi__video{
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    justify-content: center;
-    max-width: 100%;
-}
-
-/*************************ENTREGAS*************************/
-.recomendacion{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    gap: 20px;
-    font-weight: bold;
-}
-.carousel--alto{
-    height: 50vh;
-}
-.carousel--img{
-    object-fit: contain;
-    object-position: center;
-    height: 50vh;
-}
 
 /*************************CONTACTOS*************************/
 /*FORMULARIO*/
 .contactos{
     background-image: url(../../img/entrega.jpg);
-    background-size: 210vh;
+    background-size: 205vh;
     background-repeat: no-repeat;
     color: rgb(21, 128, 92);
     font-size: 20px;
@@ -407,7 +391,7 @@ grid-column: span 2;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 25px;
 }
 .botones{
     display: flex;
@@ -439,7 +423,7 @@ input[type="submit"]:hover{
 /*FORMULARIO FIN*/
 
 
-/*************************MEDIA QUERIES HASTA 768px*************************/
+/*************************MEDIA QUERIES HASTA 1024px*************************/
 @media screen and (max-width: 1024px){
 /***INDEX***/
 .header{
@@ -479,7 +463,7 @@ input[type="submit"]:hover{
     bottom: -15px;
 }
 
-.info{
+.infocard{
     flex-direction: column;
 }
 .infocard__img{
@@ -528,8 +512,8 @@ p{
     font-size: 25px;
 }
 .footer__img{
-    height: 30px;
-    width: 30px;
+    height: 20px;
+    width: 20px;
     padding: 1px;
 }
 
@@ -555,15 +539,6 @@ p{
 .member__desc{
     font-size: 19px;
 }
-
-.mi__titulo{
-    margin: -10rem;
-}
-.mi__parrafo{
-    margin-top: 9rem;
-}
-
-
 
 /****CONTACTOS***/
 .contactos{
@@ -612,7 +587,7 @@ p{
         bottom: -15px;
     }
 
-    .info{
+    .infocard{
         flex-direction: column;
     }
     .infocard__img{
@@ -654,6 +629,9 @@ p{
         font-size: 19px;
         margin: 24px;
     }
+    .footer{
+        height: 15vh;
+    }
     .footer__list{
         height: 1rem;
     }
@@ -661,8 +639,8 @@ p{
         font-size: 25px;
     }
     .footer__img{
-        height: 30px;
-        width: 30px;
+        height: 20px;
+        width: 20px;
         padding: 1px;
     }
 
@@ -685,7 +663,6 @@ p{
     .rec__img{
         width: 90%;
         height: 90%;
-        
     }
     
     /****NOSOTROS****/
@@ -709,21 +686,6 @@ p{
     }
     .member__desc{
         font-size: 19px;
-    }
-    .mi__titulo{
-        margin-top: -5rem;
-        font-size: 20px;
-        height: 0rem;
-    }
-    .mi__parrafo{
-        font-size: 19px;
-        text-align: center;
-        margin-top: 11rem;
-    }
-    .mi__video{
-        margin-top: 0rem;
-        margin-bottom: 1rem;
-        max-width: 70%;
     }
 
     /****CONTACTOS***/
@@ -783,7 +745,7 @@ p{
         bottom: -40px;
     }
     
-    .info{
+    .infocard{
         flex-direction: column;
     }
     .infocard__img{
@@ -824,15 +786,18 @@ p{
         font-size: 15px;
         margin:0 0 24px 0
     }
+    .footer{
+        height: 9vh;
+    }
     .footer__list{
-        height: 1rem;
+        height: 3rem;
     }
     .footer__titulo{
         font-size: 15px;
     }
     .footer__img{
-        height: 30px;
-        width: 30px;
+        height: 15px;
+        width: 15px;
         padding: 1px;
     }
 
@@ -888,21 +853,6 @@ p{
     }
     .member__desc{
         font-size: 15px;
-    }
-    .mi__titulo{
-        font-size: 20px;
-        height: 0rem;
-        margin-top: -1rem;
-    }
-    .mi__parrafo{
-        font-size: 15px;
-        text-align: center;
-        margin-top: 11rem;
-    }
-    .mi__video{
-        margin-top: 0.5rem;
-        margin-bottom: 1rem;
-        max-width: 90%;
     }
 
     /****CONTACTOS***/

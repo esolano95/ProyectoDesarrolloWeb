@@ -1,0 +1,40 @@
+/*HERO*/
+.hero{
+    background-image: url("../../img/pexels-jane-doan-1128678.jpg");
+    text-align: center;
+    height: 78vh;
+    position: relative;
+    display: flex;
+    padding: 2rem;
+&__heading{
+    font-size: 3rem;
+    color: rgb(15, 105, 15);
+    margin-left: 8.3rem;
+    display: flex;
+}
+&__slogan{
+    color: rgb(76, 131, 76);
+    font-size: 30px;
+    font-weight: bold;
+    text-align: left;
+    margin-top: 2rem;
+    }
+&__btn{
+    color: rgb(77, 128, 77);
+    background-color: rgb(187, 240, 222);
+    font-weight: bold;
+    padding: 1rem;
+    font-size: 1.5rem;
+    border-radius: 20px;
+    display: inline-block;
+    position: absolute;
+    left: 250px;
+    bottom: 70px;
+    transition: 0.5s;
+}
+&__btn:hover{
+    color: whitesmoke;
+    padding: 1.1rem;
+}
+}
+/*HERO FIN*/

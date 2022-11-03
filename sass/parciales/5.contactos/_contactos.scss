@@ -1,0 +1,42 @@
+/*FORMULARIO*/
+.contactos{
+    background-image: url(../../img/entrega.jpg);
+    background-size: 205vh;
+    background-repeat: no-repeat;
+    color: rgb(21, 128, 92);
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+
+.botones{
+    display: flex;
+}
+input[type="text"]{
+    width: 150px;
+    font-size: 15px;
+}
+input[type="reset"]{
+    cursor:pointer;
+    width: 120px;
+    color: rgb(21, 128, 92);
+    font-size: 16px;
+    font-weight: bold;
+}
+input[type="reset"]:hover{
+    border: 1px solid rgb(21, 128, 92);
+}
+input[type="submit"]{
+    width: 120px;
+    margin-left: 35px; 
+    color: rgb(21, 128, 92);
+    font-size: 16px;
+    font-weight: bold;
+}
+input[type="submit"]:hover{
+    border: 1px solid rgb(21, 128, 92);
+}
+}
+/*FORMULARIO FIN*/

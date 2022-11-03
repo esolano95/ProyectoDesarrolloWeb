@@ -1,0 +1,29 @@
+/*PIE DE PAGINA*/
+.footer{
+    height: 6rem;
+    background-image: url("../../img/fondo.1.webp");
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: row;
+
+&__titulo{
+    display: inline-block;
+    padding: 0.2rem;
+    font-size: 13px;
+    font-weight: bold;
+}
+&__item{
+    display: inline-block;
+    padding: 0.2rem;
+    border-radius: 13px;
+    background-color: rgb(198, 240, 226);
+    font-size: 20px;  
+}
+&__img{
+    height: 25px;
+    width: 25px;
+    margin: 0.4rem;
+}
+}
+/*PIE DE PAGINA FIN*/

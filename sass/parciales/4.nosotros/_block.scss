@@ -1,0 +1,20 @@
+.block{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    padding: 2rem;
+
+&__wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(21, 128, 92);
+}
+&__heading{
+    text-align: center;
+}
+&__slogan{
+    text-align: center;
+    font-weight: bold;
+}
+}

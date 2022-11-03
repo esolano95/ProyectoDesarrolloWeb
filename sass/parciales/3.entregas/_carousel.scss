@@ -1,0 +1,9 @@
+.carousel--alto{
+    height: 50vh;
+
+&--img{
+    object-fit: contain;
+    object-position: center;
+    height: 50vh;
+}
+}
