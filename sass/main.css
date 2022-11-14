@@ -230,9 +230,9 @@ p {
 }
 
 .capiproduct__titulo {
-  color: rgb(21, 128, 92);
-  font-size: 30px;
-  text-align: center;
+  color: rgb(21, 128, 92) !important;
+  font-size: 30px !important;
+  text-align: center !important;
 }
 
 .capiproduct__video {
